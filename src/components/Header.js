@@ -19,20 +19,20 @@ function Header() {
     return (
         <header className="sticky top-0 z-50">
             {/*Top nav*/}
-            <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">
-                <div className="mt-2 mr-2 flex items-center flex-grow sm:flex-grow-0">
+            <div className="flex items-center bg-green-600 p-1 flex-grow py-5">
+                <div className="mt-1 mb-2 ml-4 mr-4 flex items-center flex-grow sm:flex-grow-0">
                     <Image
                         onClick={() => router.push('/')}
-                        src="https://links.papareact.com/f90"
-                        width={150}
-                        height={40}
+                        src="/farm2.png"
+                        width={180}
+                        height={60}
                         objectFit="contain"
                         className="cursor-pointer"
                     />
                 </div>
 
                 {/*search bar*/}
-                <div className=" hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-yellow-400 hover:bg-yellow-500">
+                <div className=" hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-green-100 hover:bg-yellow-500">
                     <input className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4 " type="text" />
                     <SearchIcon className="h-12 p-4" />
                 </div>
@@ -47,25 +47,25 @@ function Header() {
                         <p className="font-extrabold md:text-sm">& Orders</p>
                     </div>
                     <div onClick={() => router.push('/checkout')} className=" relative link flex items-center">
-                        <span className="absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black text-bold">
+                        <span className="absolute top-0 right-0 md:right-10 h-4 w-4 bg-green-100 text-center rounded-full text-black text-bold">
                             {items.length}</span>
                         <ShoppingCartIcon className="h-10" />
-                        <p className=" hidden md:inline font-extrabold md:text-sm mt-2">Basket</p>
+                        <p className=" hidden md:inline font-extrabold md:text-sm mt-4">Basket</p>
                     </div>
                 </div>
 
             </div>
 
             {/*Bottom nav*/}
-            <div className="flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm ">
+            <div className="flex items-center space-x-6 p-2 pt-5 pb-5 pl-6 bg-black text-white text-md ">
                 <p className="link flex items-center">
-                    <MenuIcon className="h-6 mr-1" />
+                    <MenuIcon className="h-6 mr-6" />
                     All</p>
-                <p className="link">Prime Video</p>
-                <p className="link">Amazon Business</p>
-                <p className="link">Today's Deals</p>
-                <p className="link hidden lg:inline-flex">Electronics</p>
-                <p className="link hidden lg:inline-flex">Food & Grocery</p>
+                <p className="link">FarmBlogs</p>
+                <p className="link">Seeds</p>
+                <p className="link">Rent Equipment</p>
+                <p className="link hidden lg:inline-flex">Plants</p>
+                <p className="link hidden lg:inline-flex">Send Gifts </p>
                 <p className="link hidden lg:inline-flex">Prime</p>
                 <p className="link hidden lg:inline-flex">Buy Again</p>
                 <p className="link hidden lg:inline-flex">Shopper Toolkit</p>
