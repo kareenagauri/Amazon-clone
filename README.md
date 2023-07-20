@@ -9,3 +9,5 @@ Its also promotes planting for people who have interest and passion in this feil
 
 
 
+![Screenshot (247)](https://github.com/kareenagauri/Amazon-clone/assets/75038092/9f99ddc5-1161-4d43-9db5-aae47060d302)
+
